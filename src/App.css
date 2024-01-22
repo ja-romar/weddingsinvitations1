@@ -1,0 +1,26 @@
+@import url("https://fonts.googleapis.com/css2?family=Cinzel:wght@400;700&display=swap");
+body {
+  font-family: "Cinzel", serif;
+}
+main {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100vh;
+  max-width: 1500px;
+  color: black;
+  background-color: #ebeae6;
+}
+
+html {
+  scroll-behavior: smooth;
+  background: #ebeae6;
+}
+
+@media (max-width: 768px) {
+  html {
+    scroll-behavior: unset;
+  }
+}

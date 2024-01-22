@@ -1,0 +1,60 @@
+.container-principal-countDown {
+  width: 100%;
+  position: relative;
+}
+
+.container-date {
+  display: flex;
+  max-width: 1000px;
+  padding: 20px 40px;
+  justify-content: space-between;
+  align-items: center;
+  margin: auto;
+}
+
+.date {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  width: 100%;
+}
+.date h3 {
+  color: #ffa9b1;
+}
+.date h3,
+p {
+  font-size: 3vw;
+}
+
+@media (max-width: 768px) {
+  .rosa-img {
+    content: url("../../assets/svg/ROSA2.svg");
+  }
+}
+@media (max-width: 640px) {
+  .container {
+    position: relative;
+  }
+  .container-date {
+    flex-direction: column;
+  }
+  .date {
+    justify-content: center;
+    align-items: center;
+  }
+  .date h3 {
+    font-size: 24px;
+  }
+  .date p {
+    font-weight: 600;
+    font-size: 20px;
+  }
+  .rosa-img {
+    /* width: 100%; */
+    width: 170px;
+    height: 170px;
+    position: absolute;
+    /* background-color: blueviolet; */
+    bottom: -89.9px;
+  }
+}

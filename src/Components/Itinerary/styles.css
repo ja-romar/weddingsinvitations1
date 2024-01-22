@@ -1,0 +1,35 @@
+.container-principal-itinerary {
+  width: 100%;
+  margin-top: 50px;
+}
+.container-principal-itinerary h2 {
+  font-size: 3vw;
+  color: #ffa9b1;
+}
+.container-itinerary {
+  display: flex;
+  flex-direction: column;
+  gap: 50px;
+  max-width: 1000px;
+  padding: 20px 40px;
+  justify-content: center;
+  margin: auto;
+}
+
+.container-itinerary-cards {
+  display: flex;
+  background-color: bisque;
+  width: 100%;
+  gap: 60px;
+}
+.itinerary-cards {
+  display: flex;
+  width: 50%;
+  height: 310px;
+  flex-direction: column;
+  background-color: aqua;
+}
+.itinerary-cards p {
+  font-size: 18px;
+  color: white;
+}
