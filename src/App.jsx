@@ -1,16 +1,21 @@
 import { useState } from "react";
-import FlowersDown from "./assets/svg/flowers_down.svg";
+
 import "./App.css";
-import { Header } from "./Components/Header/Header";
-import Banner from "./assets/Banner.png";
 import Salon from "./assets/SALON.png";
+import Banner from "./assets/Banner.png";
 import Iglesia from "./assets/IGLESIA.png";
+import { Quote } from "./Components/Quote/Quote";
+import { Header } from "./Components/Header/Header";
+import DresscodeMen from "./assets/DresscodeMen.png";
+import FlowersDown from "./assets/svg/flowers_down.svg";
+import DresscodeWomen from "./assets/DresscodeWomen.png";
 import { CountDown } from "./Components/CountDown/CountDown";
 import { Itinerary } from "./Components/Itinerary/Itinerary";
 import { DressCode } from "./Components/DressCode/DressCode";
-import DresscodeWomen from "./assets/DresscodeWomen.png";
-import DresscodeMen from "./assets/DresscodeMen.png";
-import { Quote } from "./Components/Quote/Quote";
+import { UtilitiesWedding } from "./Components/UtilitiesWedding/UtilitiesWedding";
+import playlistUtility from "./assets/playlistUtility.png";
+import flowersUtility from "./assets/flowers_utility.png";
+import attendanceUtility from "./assets/attendanceUtility.png";
 
 function App() {
   const places = [
@@ -40,6 +45,17 @@ function App() {
       img: DresscodeMen,
     },
   ];
+
+  const utilities = [
+    { id: 1, img: flowersUtility, title: "Mesa de regalos" },
+    {
+      id: 2,
+      img: attendanceUtility,
+      title: "Confirmar asistencia",
+      isReverse: true,
+    },
+    { id: 3, img: playlistUtility, title: "Playlist" },
+  ];
   return (
     <main>
       <Header image={Banner} title="Odeth & Antonio" date="26 | 08 | 2023" />
@@ -50,6 +66,7 @@ function App() {
         quoteAutor="-Antonio Alonso"
         quote="“Voy a amarte todos los dias de mi vida, voy a cuidarte todos los dias de mi vida”"
       />
+      <UtilitiesWedding utilities={utilities} />
       {/* <img src={FlowersDown} className="absolute bottom-0" alt="FlowersDown" /> */}
     </main>
   );

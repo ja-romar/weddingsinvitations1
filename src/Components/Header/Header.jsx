@@ -6,7 +6,7 @@ export const Header = ({ image, title, date }) => {
     backgroundSize: "cover",
     backgroundPosition: "80% center",
     width: "100%",
-    height: "100%",
+    height: "100vh",
   };
 
   return (
