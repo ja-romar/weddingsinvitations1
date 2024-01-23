@@ -2,12 +2,19 @@ import React from "react";
 import RosaIMG from "../../assets/svg/ROSA1.svg";
 import RosaIMG2 from "../../assets/svg/ROSA2.svg";
 import "./styles.css";
+import { Separator } from "../Atoms/Separator/Separator";
 export const CountDown = ({ date }) => {
   return (
     <div className="container-principal-countDown">
       <div className="container-date">
         <div className="date">
-          <h3>Faltan</h3>
+          <h3>
+            Faltan
+            <span>
+              <Separator />
+            </span>
+          </h3>
+
           <p>{date}</p>
         </div>
 

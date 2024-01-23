@@ -1,0 +1,33 @@
+.quote-container-principal {
+  background-color: #5f6c6a;
+  width: 100%;
+}
+.quote-container {
+  color: white;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  padding: 40px;
+  width: 70%;
+  justify-content: center;
+  align-items: center;
+  margin: auto;
+}
+.quote-container p {
+  font-size: 2vw;
+}
+.text-quote {
+  text-align: center;
+}
+.text-quoteAutor {
+  text-align: end;
+  width: 100%;
+}
+@media (max-width: 640px) {
+  .quote-container {
+    width: 90%;
+  }
+  .quote-container p {
+    font-size: 3vw;
+  }
+}

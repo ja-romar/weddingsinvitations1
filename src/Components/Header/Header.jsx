@@ -5,8 +5,8 @@ export const Header = ({ image, title, date }) => {
     backgroundImage: `url(${image})`,
     backgroundSize: "cover",
     backgroundPosition: "80% center",
-    width: "100%", // Cover the full width of the container
-    height: "5000px",
+    width: "100%",
+    height: "100%",
   };
 
   return (

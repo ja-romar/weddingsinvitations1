@@ -1,5 +1,6 @@
 import React from "react";
 import "./styles.css";
+import { Separator } from "../Atoms/Separator/Separator";
 export const Itinerary = ({ places }) => {
   const containerStyle = {
     backgroundSize: "cover",
@@ -10,7 +11,13 @@ export const Itinerary = ({ places }) => {
   return (
     <div className="container-principal-itinerary">
       <div className="container-itinerary">
-        <h2>¿Cuándo y donde?</h2>
+        <h2>
+          ¿Cuándo y donde?
+          <span>
+            <Separator />
+          </span>
+        </h2>
+
         <div className="container-itinerary-cards">
           {places.map((place) => (
             <div className="itinerary-cards" key={place.id}>
@@ -20,10 +27,8 @@ export const Itinerary = ({ places }) => {
                   ...containerStyle,
                 }}
               >
-                <div>
+                <div className="container-title">
                   <p>{place.title}</p>
-                </div>
-                <div>
                   <p>Como llegar</p>
                 </div>
               </div>
