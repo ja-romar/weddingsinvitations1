@@ -7,7 +7,6 @@ import Iglesia from "./assets/IGLESIA.png";
 import { Quote } from "./Components/Quote/Quote";
 import { Header } from "./Components/Header/Header";
 import DresscodeMen from "./assets/DresscodeMen.png";
-import FlowersDown from "./assets/svg/flowers_down.svg";
 import DresscodeWomen from "./assets/DresscodeWomen.png";
 import { CountDown } from "./Components/CountDown/CountDown";
 import { Itinerary } from "./Components/Itinerary/Itinerary";
@@ -16,6 +15,12 @@ import { UtilitiesWedding } from "./Components/UtilitiesWedding/UtilitiesWedding
 import playlistUtility from "./assets/playlistUtility.png";
 import flowersUtility from "./assets/flowers_utility.png";
 import attendanceUtility from "./assets/attendanceUtility.png";
+import surprise1 from "./assets/surprise1.png";
+import surprise2 from "./assets/surprise2.png";
+import surprise3 from "./assets/surprise3.png";
+import imgCarousel from "./assets/img_carousel.png";
+import { Surprises } from "./Components/Surprises/Surprises";
+import { Carousel } from "./Components/Carousel/Carousel";
 
 function App() {
   const places = [
@@ -56,6 +61,14 @@ function App() {
     },
     { id: 3, img: playlistUtility, title: "Playlist" },
   ];
+
+  const surprises = [
+    { id: 1, title: "Nuestra luna de miel sera en gracia", img: surprise1 },
+    { id: 2, title: "Segunda sorpresa 22 de junio", img: surprise2 },
+    { id: 3, title: "Tercera sorpresa 24 de julio", img: surprise3 },
+  ];
+
+  const imagesCarousel = [imgCarousel, imgCarousel, imgCarousel, imgCarousel];
   return (
     <main>
       <Header image={Banner} title="Odeth & Antonio" date="26 | 08 | 2023" />
@@ -67,7 +80,8 @@ function App() {
         quote="“Voy a amarte todos los dias de mi vida, voy a cuidarte todos los dias de mi vida”"
       />
       <UtilitiesWedding utilities={utilities} />
-      {/* <img src={FlowersDown} className="absolute bottom-0" alt="FlowersDown" /> */}
+      <Surprises surprises={surprises} />
+      <Carousel imagesCarousel={imagesCarousel} />
     </main>
   );
 }

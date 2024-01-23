@@ -1,0 +1,43 @@
+.surprises-container-principal {
+  width: 100%;
+}
+.surprises-container {
+  display: flex;
+  flex-direction: column;
+  margin: auto;
+  max-width: 1000px;
+  height: 100%;
+}
+.surprises-container h1 {
+  padding: 20px 40px;
+  color: #ffa9b1;
+}
+.surprises-cards {
+  display: flex;
+  width: "100%";
+  padding: 0 40px;
+}
+.surprise-container {
+  flex: 1;
+  transition: flex 0.5s;
+  cursor: pointer;
+  position: relative;
+}
+.surprise-container.extendido {
+  flex: 8;
+}
+.surprise-container p {
+  position: absolute;
+  color: white;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  margin: 0;
+  font-size: 18px;
+}
+
+@media (max-width: 640px) {
+  .surprises-cards {
+    flex-direction: column;
+  }
+}
