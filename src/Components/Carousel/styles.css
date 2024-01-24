@@ -14,7 +14,7 @@
 .carousel-container h1 {
   margin-bottom: 10px;
   color: #ffa9b1;
-  font-size: 2vw;
+  /* font-size: 2.5vw; */
 }
 .swiper {
   width: 100%;

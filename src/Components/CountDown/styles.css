@@ -41,12 +41,15 @@ p {
   .container-date {
     flex-direction: column;
   }
-  .date {
+  .date p {
     justify-content: center;
     align-items: center;
+    width: 100%;
+    text-align: center;
   }
   .date h3 {
     font-size: 24px;
+    /* align-items: baseline; */
   }
   .date p {
     font-weight: 600;

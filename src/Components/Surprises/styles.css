@@ -40,4 +40,7 @@
   .surprises-cards {
     flex-direction: column;
   }
+  .surprises-container h1 {
+    padding: 10px 20px;
+  }
 }

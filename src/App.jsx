@@ -21,6 +21,7 @@ import surprise3 from "./assets/surprise3.png";
 import imgCarousel from "./assets/img_carousel.png";
 import { Surprises } from "./Components/Surprises/Surprises";
 import { Carousel } from "./Components/Carousel/Carousel";
+import { Footer } from "./Components/Footer/Footer";
 
 function App() {
   const places = [
@@ -82,6 +83,7 @@ function App() {
       <UtilitiesWedding utilities={utilities} />
       <Surprises surprises={surprises} />
       <Carousel imagesCarousel={imagesCarousel} />
+      <Footer />
     </main>
   );
 }
